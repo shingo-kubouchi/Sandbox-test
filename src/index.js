@@ -157,3 +157,37 @@ const newNameArr = nameArr.map((name8) => {
   }
 });
 console.log(newNameArr);
+
+// 三項演算子
+const num8 = 1300;
+console.log(num8.toLocaleString());
+
+const formattedNum =
+  typeof num8 === "number" ? num8.toLocaleString() : "数値を入力してください。";
+console.log(formattedNum);
+
+const checkSum = (num9, num10) => {
+  return num9 + num10 > 100 ? "100を超えています" : "許容範囲です";
+};
+console.log(checkSum(50, 60));
+
+// 論理演算子
+const flag1 = true;
+const flag2 = false;
+
+if (flag1 || flag2) {
+  console.log("１か２はtrueになります");
+}
+if (flag1 && flag2) {
+  console.log("１か２はtrueになります");
+}
+
+// ||は左側がfalseなら右側を返す
+const num11 = null;
+const fee = num11 || "金額未設定です。";
+console.log(fee);
+
+// &&は左側がtrueなら右側を返す
+const num12 = 100;
+const fee2 = num12 && "なにか設定されました";
+console.log(fee2);
